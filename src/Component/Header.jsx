@@ -2,11 +2,12 @@ import React from 'react';
 import Slider1 from "../Component/ImageSlider.jsx";
 import "../../src/index.css";
 
+
 const Header = () => {
   return (
     <>
       <div 
-        className="font-comic flex flex-col overflow-hidden pt-20 items-center justify-center phone:text-center bg-[url('./src/assets/images/headerbg.png')] bg-cover bg-center" 
+        className=" header-background font-comic flex flex-col overflow-hidden pt-20 items-center justify-center phone:text-center  bg-cover bg-center" 
         id="home"
       >
         {/* Animated Heading */}

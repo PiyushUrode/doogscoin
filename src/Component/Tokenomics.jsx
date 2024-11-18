@@ -39,9 +39,9 @@ const Tokenomics = () => {
     {/* H1 Section */}
     <div className="w-full md:w-1/2 flex align-middle justify-center text-center sm:px-10 md:px-0 lg:py-10 lg:px-10 px-4 md:px-3  " >
       <h1
-        className="w-full text-white font-bold text-3xl  sm:text-3xl  sm:max-w-[100%] md:max-w-[100%] md:text-3xl lg:text-4xl xl:text-5xl leading-snug md:py-10 md:px-10 px-5 py-8  sm:bg-cover bg-no-repeat bg-center "
+        className=" token-background  w-full text-white font-bold text-3xl  sm:text-3xl  sm:max-w-[100%] md:max-w-[100%] md:text-3xl lg:text-4xl xl:text-5xl leading-snug md:py-10 md:px-10 px-5 py-8  sm:bg-cover bg-no-repeat bg-center "
         style={{
-          backgroundImage: "url('./src/assets/images/token/tokensec.png')",
+
           minHeight: "150px", // Ensures proper height on small screens
         }}
       >

@@ -31,7 +31,7 @@ const Footer = () => {
                         <div className="mt-16 flex flex-col gap-10  tablet:justify-center sm:max-w-[40%] ">
                             <div
                                 className="flex justify-center align-middle text-white justify-center items-center text-5xl   
-                                 py-10 px-10 bg-no-repeat bg-center bg-[url('./src/assets/images/token/tokensec.png')] 
+                                 py-10 px-10 bg-no-repeat bg-center token-background 
                                 bg-contain "
                                 id="home"
                             >

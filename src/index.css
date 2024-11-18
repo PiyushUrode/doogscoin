@@ -51,3 +51,14 @@ body {
   display: inline-block;
 }
 
+.header-background {
+  background-image: url('./assets/images/headerbg.png'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+ 
+}
+
+.token-background {
+  background-image: url('./assets/images/token/tokensec.png'); /* Webpack/Vite resolves this path automatically */
+  background-size: cover;
+ 
+}
