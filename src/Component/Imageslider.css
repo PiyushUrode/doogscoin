@@ -1,0 +1,40 @@
+/* Base styling for Swiper slides */
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease; /* Smooth transition */
+}
+
+/* Container styling */
+.container {
+  width: 400px;
+  height: 400px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* Styling for the image container */
+.image-container {
+  background: rgb(255, 87, 34);
+  padding: 10px;
+  border-radius: 15px;
+  transition: transform 0.5s ease, background-color 1s ease;
+  width: 150px;  /* Set width and height for smaller images */
+  height: 200px;
+}
+
+/* Styling for the middle active slide */
+.swiper-slide-active .image-container {
+  transform: scale(2);  /* Slightly larger size for the middle image */
+  background-color: transparent;  /* Remove background for middle image */
+  width: 200px;  /* Increase width and height for center image */
+  height: 200px;
+}
+
+/* Styling for images inside the container */
+.slide-image {
+  width: 100%;  /* Make the image take the full width of the container */
+  border-radius: 10px;
+}

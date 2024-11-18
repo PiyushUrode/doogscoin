@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Setting default font-family and global styles */
+:root {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Apply Comic Sans globally */
+  line-height: 1.5;
+  font-weight: 500;
+  color-scheme: light dark;
+  color: rgba(13, 13, 13, 0.87);
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Define @font-face for Comic Sans MS and other variants */
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('../src/font/ldfcomicsans-font/Ldfcomicsans-jj7l.ttf') format('truetype'),
+       url('../src/font/ldfcomicsans-font/Ldfcomicsansbold-zgma.ttf') format('truetype'),
+       url('../src/font/ldfcomicsans-font/Ldfcomicsanshairline-5PmL.ttf') format('truetype');
+
+}
+
+/* Custom Overrides */
+*, ::before, ::after {
+  box-sizing: border-box; /* Prevent padding and border from affecting width */
+  border-width: 0;
+  border-style: solid;
+  border-color: theme('borderColor.DEFAULT', currentColor);
+}
+
+body {
+  cursor: url('./assets/images/cursor.png') ,  auto; /* Fallback to default cursor */
+}
+
+/* Custom CSS */
+.text-gradient {
+            /* Adjust as needed */
+  color: rgb(255, 255, 255);                    /* White inner text color */
+  text-shadow: 2px 2px 2px black;  /* Black outer shadow for text */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image:  linear-gradient(90deg, #ff5622 0%, #ff4911d2 50%, #902300 100%);
+  
+  -webkit-text-stroke: 3px transparent;  /* Text stroke to show the gradient */
+  display: inline-block;
+}
+
