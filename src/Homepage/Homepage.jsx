@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from "../Component/Navbar.jsx"
 import Header from '../Component/Header';
 import About from '../Component/About';
 import Tokenomics from '../Component/Tokenomics';
@@ -10,12 +11,13 @@ import Footer from "../Component/Footer"
 const Homepage = () => {
   return (
     <>
-      <div ><Header /></div>
-       <div ><About /></div>
-     <div ><Tokenomics /></div>
-     <div ><Howtobuy /></div>
-     <div ><Contact /></div>
-     <div ><Footer /></div> 
+      <Navbar />
+      <Header />
+      <About />
+      <Tokenomics />
+      <Howtobuy />
+      <Contact />
+      <Footer />
     </>
   );
 };

@@ -22,7 +22,7 @@
   border-radius: 15px;
   transition: transform 0.5s ease, background-color 1s ease;
   width: 150px;  /* Set width and height for smaller images */
-  height: 200px;
+  height: 150px;
 }
 
 /* Styling for the middle active slide */

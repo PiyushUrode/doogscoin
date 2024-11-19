@@ -17,7 +17,7 @@ const ImageSlider = () => {
       centeredSlides={true}
       loop={true}
       spaceBetween={20}
-      autoplay={{ delay: 2000, disableOnInteraction: false }}  // Auto-slide every 2 seconds
+      autoplay={{ delay: 2000, disableOnInteraction: true }}  // Auto-slide every 2 seconds
       speed={500}  // Smooth transition speed
       breakpoints={{
         250: {

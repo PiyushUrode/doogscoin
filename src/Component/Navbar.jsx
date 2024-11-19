@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../assets/images/doglogo.png";
 
-const Navbar = () => {
+constNavbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
 
@@ -39,11 +39,11 @@ const Navbar = () => {
 
           <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
             <div className='flex gap-3 phone:gap-1 items-center'>
-              <a target="blank" href="https://smartbcconcept.net/MemberPanel/Login.aspx" className="rbtn h-fit rounded-full">
+              {/* <a target="blank" href="https://smartbcconcept.net/MemberPanel/Login.aspx" className="rbtn h-fit rounded-full">
                 <span className="text rounded-full px-5 py-2 phone:py-1 phone:px-2 phone:text-sm">Sign In</span>
-              </a>
-              <a target="blank" href="https://smartbcconcept.net/" className="rbtn h-fit rounded-full">
-                <span className="text rounded-full px-5 py-2 phone:py-1 phone:px-2 phone:text-sm">Sign Up</span>
+              </a> */}
+              <a target="blank" href="/" className="rbtn h-fit rounded-full">
+                <span className="text rounded-full px-5 py-2 phone:py-1 phone:px-2 phone:text-sm text-orange-500 rounded-xl border-2 border-orange-500">BUY DOOGS</span>
               </a>
             </div>
 
@@ -77,31 +77,36 @@ const Navbar = () => {
             className={`items-center justify-between w-[99%] md:flex md:w-auto md:order-1 ${isNavVisible ? 'block' : 'hidden'}`}
           >
             <ul className="navcar flex flex-col p-4 md:py-1.5 mt-4 font-medium border border-[--primary-color] md:rounded-[50px] rounded-lg md:space-x-[3vmax] md:flex-row md:mt-0 md:border-0 text-black tablet:bg-gray-900">
-              <li className="md:border-none border-b-[1px] border-gradient">
-                <Link to="/#home" onClick={closeMenu}>
-                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-[#8AFADE] font-outfit">Home</div>
-                </Link>
-              </li>
-              <li className="md:border-none border-b-[1px] border-gradient">
-                <Link to="/#about" onClick={closeMenu}>
-                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-[#8AFADE] font-outfit">About</div>
-                </Link>
-              </li>
-              <li className="md:border-none border-b-[1px] border-gradient">
-                <Link to="/#token" onClick={closeMenu}>
-                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-[#8AFADE] font-outfit">Tokenomics</div>
-                </Link>
-              </li>
-              <li className="md:border-none border-b-[1px] border-gradient">
-                <Link to="/#roadmap" onClick={closeMenu}>
-                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-[#8AFADE] font-outfit">Roadmap</div>
-                </Link>
-              </li>
-              <li className="md:border-none border-b-[1px] border-gradient">
+            <li className="md:border-none border-b-[1px] border-gradient">
+    <a href="#home" onClick={closeMenu}>
+      <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">Home</div>
+    </a>
+  </li>
+  <li className="md:border-none border-b-[1px] border-gradient">
+    <a href="#about" onClick={closeMenu}>
+      <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">About</div>
+    </a>
+  </li>
+  <li className="md:border-none border-b-[1px] border-gradient">
+    <a href="#token" onClick={closeMenu}>
+      <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">Tokenomics</div>
+    </a>
+  </li>
+  {/* <li className="md:border-none border-b-[1px] border-gradient">
+    <a href="#roadmap" onClick={closeMenu}>
+      <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">Roadmap</div>
+    </a>
+  </li> */}
+  <li className="md:border-none border-b-[1px] border-gradient">
+    <a href="#howtobuy" onClick={closeMenu}>
+      <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">How to Buy</div>
+    </a>
+  </li>
+              {/* <li className="md:border-none border-b-[1px] border-gradient">
                 <Link to="/Privacypolicy" onClick={closeMenu}>
-                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-[#8AFADE] font-outfit">Privacy Policy</div>
+                  <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">Privacy Policy</div>
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>
