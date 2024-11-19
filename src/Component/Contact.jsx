@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import contact1 from "../assets/images/contact/contact1.png";
+import contact1 from "../assets/images/contact/contact1.webp";
 import contact2 from "../assets/images/contact/contact2.png";
 
 const Contact = () => {

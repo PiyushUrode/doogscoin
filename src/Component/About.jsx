@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import aboutimg from "../assets/images/aboutus/aboutimg.png";
+import aboutimg from "../assets/images/aboutus/aboutimg.webp";
 import "../../src/index.css";
 
 

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import token1 from "../assets/images/token/tokenomicsimg.png";
-import token2 from "../assets/images/token/tokenimg2.png";
-import token3 from "../assets/images/token/tokenimg3.png";
+import token1 from "../assets/images/token/tokenomicsimg.webp";
+import token2 from "../assets/images/token/tokenimg2.webp";
+import token3 from "../assets/images/token/tokenimg3.webp";
 
 const Tokenomics = () => {
   useEffect(() => {

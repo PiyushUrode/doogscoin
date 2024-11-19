@@ -4,9 +4,9 @@ import 'swiper/css';
 import 'swiper/css/autoplay';
 import '../Component/Imageslider.css';
 
-import headerImg1 from '../assets/images/header-img/headerimg1.png';
-import headerImg2 from '../assets/images/header-img/headerimg2.png';
-import headerImg3 from '../assets/images/header-img/headerimg3.png';
+import headerImg1 from '../assets/images/header-img/headerimg1.webp';
+import headerImg2 from '../assets/images/header-img/headerimg2.webp';
+import headerImg3 from '../assets/images/header-img/headerimg3.webp';
 
 const ImageSlider = () => {
   const images = [headerImg1, headerImg2, headerImg3, headerImg2, headerImg3, headerImg1];
