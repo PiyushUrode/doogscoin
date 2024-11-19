@@ -4,6 +4,7 @@ import logo from "../assets/images/doglogo.webp";
 
 
 
+
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
@@ -45,14 +46,27 @@ const Navbar = () => {
         </a>
 
         <div className="flex md:order-2 gap-5 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div className='flex gap-3 sm:gap-1 items-center'>
+          <div className='flex gap-3 sm:gap-1 hidden sm:block items-center'>
             <a
               target="blank"
-              href="../assets/Whitepaper.pdf"
+              href="/whitepaper.pdf"
+              rel="noopener noreferrer" 
               className="rbtn h-fit rounded-full"
             >
               <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
                 Whitepaper
+              </span>
+            </a>
+          </div>
+
+          <div className='flex gap-3 sm:gap-1 items-center'>
+            <a
+              target="blank"
+              href="/"
+              className="rbtn h-fit rounded-full"
+            >
+              <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
+                BUY DOOGS
               </span>
             </a>
           </div>
@@ -114,6 +128,14 @@ const Navbar = () => {
               <a href="#howtobuy" onClick={closeMenu}>
                 <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">
                   How to Buy
+                </div>
+              </a>
+            </li>
+
+            <li className="md:border-none md:hidden border-b-[1px] border-gradient">
+              <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer"  onClick={closeMenu}>
+                <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">
+                  Whitepaper
                 </div>
               </a>
             </li>

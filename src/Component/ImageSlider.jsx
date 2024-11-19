@@ -9,9 +9,14 @@ import '../Component/Imageslider.css'; // Import your custom styles
 import headerImg1 from '../assets/images/header-img/headerimg1.webp';
 import headerImg2 from '../assets/images/header-img/headerimg2.webp';
 import headerImg3 from '../assets/images/header-img/headerimg3.webp';
+import headerImg4 from '../assets/images/header-img/headerimg4.png';
+import headerImg5 from '../assets/images/header-img/headerimg5.png';
+import headerImg6 from '../assets/images/header-img/headerimg6.png';
+import headerImg7 from '../assets/images/header-img/headerimg7.png';
+import headerImg8 from '../assets/images/header-img/headerimg8.png';
 
 const ImageSlider = () => {
-  const images = [headerImg1, headerImg2, headerImg3, headerImg2, headerImg3, headerImg1];
+  const images = [headerImg1, headerImg2, headerImg3, headerImg4, headerImg5, headerImg6 , headerImg7,  headerImg8, ];
 
   return (
     <Swiper
