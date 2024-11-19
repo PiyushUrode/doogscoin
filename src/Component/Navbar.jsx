@@ -42,13 +42,13 @@ const Navbar = () => {
         </a>
 
         <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div className='flex gap-3 phone:gap-1 items-center'>
+          <div className='flex gap-3 sm:gap-1 items-center'>
             <a
               target="blank"
               href="/"
               className="rbtn h-fit rounded-full"
             >
-              <span className="text rounded-full px-5 py-2 phone:py-1 phone:px-2 phone:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
+              <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
                 BUY DOOGS
               </span>
             </a>

@@ -27,8 +27,15 @@ const Footer = () => {
                                 a professional financial advisor to assess your individual
                                 circumstances and risk tolerance.
                             </p>
+                            <div className="sm:flex sm:items-center tablet:text-center sm:justify-between">
+                        <span className="text-sm   sm:text-center  text-gray-700">© 2024 <a href="" className="hover:underline">DOOGS COIN</a>. All Rights Reserved.
+                        </span>
+                        <div className="flex mt-4 sm:justify-center sm:mt-0">
+
                         </div>
-                        <div className="mt-16 flex flex-col gap-10  tablet:justify-center sm:max-w-[40%] ">
+                    </div>
+                        </div>
+                        <div className=" flex flex-col gap-10  tablet:justify-center sm:max-w-[40%] ">
                             <div
                                 className="flex justify-center align-middle text-white justify-center items-center text-5xl   
                                  py-10 px-10 bg-no-repeat bg-center token-background 
