@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import logo from "../assets/images/doglogo.webp";
-import Whitepaper from "../assets/Whitepaper.pdf"
+
+
 
 
 const Navbar = () => {
@@ -47,7 +48,7 @@ const Navbar = () => {
           <div className='flex gap-3 sm:gap-1 items-center'>
             <a
               target="blank"
-              href={Whitepaper}
+              href="../assets/Whitepaper.pdf"
               className="rbtn h-fit rounded-full"
             >
               <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
