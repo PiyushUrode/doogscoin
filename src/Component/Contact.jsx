@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="flex flex-col md:flex-row items-center justify-center gap-6 px-4 md:px-10 py-10"
+      className="flex flex-col overflow-x-hidden md:flex-row items-center justify-center gap-6 px-4 md:px-10 py-10"
     >
       {/* Left Section */}
       <div

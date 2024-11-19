@@ -1,4 +1,4 @@
-import logo from "../assets/images/doglogo.png";
+import logo from "../assets/images/doglogo.webp";
 import Twiiter from "../assets/images/footer/logo1.png"
 import Telegram from "../assets/images/footer/logo2.png"
 import { Link } from "react-router-dom";

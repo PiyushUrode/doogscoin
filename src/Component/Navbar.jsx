@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logo from "../assets/images/doglogo.png";
+import logo from "../assets/images/doglogo.webp";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);

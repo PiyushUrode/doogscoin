@@ -1,8 +1,10 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Autoplay } from 'swiper/modules'; // Import Swiper modules
 import 'swiper/css';
+import 'swiper/css/navigation'; // Import navigation styles
 import 'swiper/css/autoplay';
-import '../Component/Imageslider.css';
+import '../Component/Imageslider.css'; // Import your custom styles
 
 import headerImg1 from '../assets/images/header-img/headerimg1.webp';
 import headerImg2 from '../assets/images/header-img/headerimg2.webp';
@@ -13,21 +15,23 @@ const ImageSlider = () => {
 
   return (
     <Swiper
+      modules={[Navigation, Autoplay]} // Include Navigation and Autoplay modules
       slidesPerView={5}
       centeredSlides={true}
       loop={true}
       spaceBetween={20}
-      autoplay={{ delay: 2000, disableOnInteraction: true }}  // Auto-slide every 2 seconds
-      speed={500}  // Smooth transition speed
+      autoplay={{ delay: 2000, disableOnInteraction: true }} // Auto-slide every 2 seconds
+      speed={500} // Smooth transition speed
+      navigation={true} // Enable navigation
       breakpoints={{
         250: {
-          slidesPerView: 1,  // Show 1 slide on small screens
+          slidesPerView: 1, // Show 1 slide on small screens
         },
         640: {
-          slidesPerView: 3,  // Show 3 slides on medium screens
+          slidesPerView: 3, // Show 3 slides on medium screens
         },
         1024: {
-          slidesPerView: 5,  // Show 5 slides on large screens
+          slidesPerView: 5, // Show 5 slides on large screens
         },
       }}
     >

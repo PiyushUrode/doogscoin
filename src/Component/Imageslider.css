@@ -38,3 +38,22 @@
   width: 100%;  /* Make the image take the full width of the container */
   border-radius: 10px;
 }
+
+
+/* Change the color of navigation buttons */
+.swiper-button-next,
+.swiper-button-prev {
+  color: #ff6347; /* Tomato color */
+}
+
+/* Add hover effect */
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  color: #ff6347; /* Deep Sky Blue color on hover */
+}
+
+/* Optional: Adjust size for better visibility */
+.swiper-button-next,
+.swiper-button-prev {
+  font-size: 24px; /* Larger button size */
+}
