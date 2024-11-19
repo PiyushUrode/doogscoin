@@ -1,6 +1,8 @@
 import logo from "../assets/images/doglogo.webp";
-import Twiiter from "../assets/images/footer/logo1.png"
-import Telegram from "../assets/images/footer/logo2.png"
+import Twiiter from "../assets/images/footer/TwitterX.svg"
+import Telegram from "../assets/images/footer/Telegram App-1.svg"
+import Facebook from "../assets/images/footer/Facebook.svg"
+import Insta from "../assets/images/footer/Insta.svg"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -38,7 +40,7 @@ const Footer = () => {
                         <div className=" flex flex-col gap-10  tablet:justify-center sm:max-w-[40%] ">
                             <div
                                 className="flex justify-center align-middle text-white justify-center items-center text-5xl   
-                                 py-10 px-10 bg-no-repeat bg-center token-background 
+                                 py-5 px-10 bg-no-repeat bg-center token-background 
                                 bg-contain "
                                 id="home"
                             >
@@ -49,14 +51,22 @@ const Footer = () => {
                             </div>
           
                             <div className="flex flex-col  justify-center align-middle">
-                                <ul className="flex flex-col"> 
+                                <ul className="flex flex-col gap-2"> 
                                     <li className="flex flex-row gap-10"> 
-                                        <img src={Twiiter} alt="" />
+                                        <img src={Twiiter} width={30} height={20} alt="" />
                                         <h1 className="text-orange-500 text-3xl" >Twitter</h1>
                                     </li>
                                     <li className="flex flex-row gap-10" > 
-                                        <img src={Telegram} alt="" />
+                                        <img src={Telegram} width={30} height={20}  alt="" />
                                         <h1 className="text-orange-500 text-3xl  ">Telegram</h1>
+                                    </li>
+                                    <li className="flex flex-row gap-10" > 
+                                        <img src={Facebook}  width={30} height={20}alt="" />
+                                        <h1 className="text-orange-500 text-3xl  ">Facebook</h1>
+                                    </li>
+                                    <li className="flex flex-row gap-10" > 
+                                        <img src={Insta} width={30} height={20}  alt="" />
+                                        <h1 className="text-orange-500 text-3xl  ">Instagram</h1>
                                     </li>
                                 </ul>
                                      

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import howimg from '../assets/images/howtobuy/dogimg.webp';
+import howimg from '../assets/images/howtobuy/ball.png';
 
 const steps = [
   'Download Metamask or your wallet of choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.',
@@ -46,7 +46,7 @@ const Howtobuy = () => {
             <img
               src={howimg}
               alt={`Step ${index + 1}`}
-              className="absolute top-5 left-5 z-10 w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24"
+              className="absolute top-7 left-5 z-10 w-16 h-16 md:w-20 md:h-20 lg:w-20 lg:h-20"
             />
             <div className="htb-sec flex flex-col items-stretch bg-white p-6 md:p-8 lg:p-10 rounded-lg shadow-lg transition-transform transform hover:scale-105">
               {/* Step Number with Animation */}

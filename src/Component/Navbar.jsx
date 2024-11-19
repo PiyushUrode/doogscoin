@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react';
 import logo from "../assets/images/doglogo.webp";
+import Whitepaper from "../assets/Whitepaper.pdf"
+
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -41,18 +43,20 @@ const Navbar = () => {
           </div>
         </a>
 
-        <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div className="flex md:order-2 gap-5 space-x-3 md:space-x-0 rtl:space-x-reverse">
           <div className='flex gap-3 sm:gap-1 items-center'>
             <a
               target="blank"
-              href="/"
+              href={Whitepaper}
               className="rbtn h-fit rounded-full"
             >
               <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
-                BUY DOOGS
+                Whitepaper
               </span>
             </a>
           </div>
+
+
 
           <button
             onClick={toggleNav}
@@ -112,6 +116,7 @@ const Navbar = () => {
                 </div>
               </a>
             </li>
+
           </ul>
         </div>
       </div>

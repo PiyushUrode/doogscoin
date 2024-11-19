@@ -40,7 +40,7 @@ const Tokenomics = () => {
         <div
           className="flex flex-col  sm:flex-row items-center justify-center text-center py-10  md:py-20 px-2 md:px-10 gap-10 "
           data-aos="zoom-in"
-          data-aos-delay="200"
+          data-aos-delay="100"
         >
           <div className="w-full sm:max-w-[70%] px-10 flex justify-center">
             <img
@@ -68,7 +68,7 @@ const Tokenomics = () => {
           <div
             className="w-full md:w-1/2 flex align-middle justify-center text-center sm:px-10 md:px-10 lg:py-10 lg:px-10 px-4 md:px-3"
             data-aos="zoom-in"
-            data-aos-delay="300"
+            data-aos-delay="200"
           >
             <h1
               className="token-background w-full text-white font-bold text-3xl sm:text-3xl px-10 py-10  sm:py-10 sm:px-1  sm:text-[20px]   md:mx-8 md:my-8  sm:max-w-[100%] md:max-w-[100%] md:text-3xl lg:text-4xl xl:text-5xl leading-snug bg-contain sm:bg-cover bg-no-repeat bg-center"
