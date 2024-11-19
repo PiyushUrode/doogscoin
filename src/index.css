@@ -36,10 +36,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   cursor: url('./assets/images/cursor.png') ,  auto; /* Fallback to default cursor */
-  overflow-x: hidden;
+
 }
 
 /* Custom CSS */

@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from "../Component/Navbar.jsx"
+import Navbar from "../Component/Navbar"
 import Header from '../Component/Header';
 import About from '../Component/About';
 import Tokenomics from '../Component/Tokenomics';
