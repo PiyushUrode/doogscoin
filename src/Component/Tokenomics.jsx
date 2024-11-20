@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import token1 from "../assets/images/token/tokenomicsimg.webp";
+import token1 from "../assets/images/token/tokenchart.webp";
 import token2 from "../assets/images/token/tokenimg2.webp";
 import token3 from "../assets/images/token/tokenimg3.webp";
 
