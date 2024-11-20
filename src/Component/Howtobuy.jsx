@@ -5,9 +5,9 @@ import howimg from '../assets/images/howtobuy/ball.png';
 
 const steps = [
   'Download Metamask or your wallet of choice from the app store or Google Play store for free. Desktop users, download the Google Chrome extension by going to metamask.io.',
-  'Have ETH in your wallet to switch to $Doogs coin. If you don’t have any ETH, you can buy directly on MetaMask, transfer from another wallet.',
+  'Have BNB in your wallet to switch to $Doogs coin. If you don’t have any BNB, you can buy directly on MetaMask, transfer from another wallet.',
   'Connect your wallet to the platform of choice. Go to the exchange and connect your wallet.',
-  'Swap ETH for $Doogs on the selected exchange and confirm the transaction in your wallet.',
+  'Swap BNB for $Doogs on the selected exchange and confirm the transaction in your wallet.',
 ];
 
 const Howtobuy = () => {

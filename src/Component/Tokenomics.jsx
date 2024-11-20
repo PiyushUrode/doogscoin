@@ -9,7 +9,7 @@ const Tokenomics = () => {
   useEffect(() => {
     AOS.init({
       duration: 1000, // Animation duration
-      easing: 'ease-in-out', // Animation easing
+      easing: 'ease-in', // Animation easing
       once: true, // Animation happens only once
     });
   }, []);
@@ -39,8 +39,7 @@ const Tokenomics = () => {
         {/* Image Section with Zoom-In Effects */}
         <div
           className="flex flex-col  sm:flex-row items-center justify-center text-center py-10  md:py-20 px-2 md:px-10 gap-10 "
-          data-aos="zoom-in"
-          data-aos-delay="100"
+          
         >
           <div className="w-full sm:max-w-[70%] px-10 flex justify-center">
             <img
@@ -85,7 +84,7 @@ const Tokenomics = () => {
           <div
             className="w-full md:w-1/2 flex justify-center"
             data-aos="zoom-in"
-            data-aos-delay="400"
+            data-aos-delay="300"
           >
             <img
               src={token3}
