@@ -1,8 +1,9 @@
 import logo from "../assets/images/doglogo.webp";
 import Twiiter from "../assets/images/footer/TwitterX.svg"
-import Telegram from "../assets/images/footer/Telegram App-1.svg"
+import Telegram from "../assets/images/footer/Telegram-1.png"
 import Facebook from "../assets/images/footer/Facebook.svg"
 import Insta from "../assets/images/footer/Insta.svg"
+import Youtube from "../assets/images/footer/Youtube.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -50,27 +51,41 @@ const Footer = () => {
                                 <h1 className='w-[100%] text-4xl text-center '> Follow us on</h1>
                             </div>
           
-                            <div className="flex flex-col  justify-center align-middle">
-                                <ul className="flex flex-col gap-2"> 
-                                    <li className="flex flex-row gap-10"> 
-                                        <img src={Twiiter} width={30} height={20} alt="" />
-                                        <h1 className="text-orange-500 text-3xl" >Twitter</h1>
-                                    </li>
-                                    <li className="flex flex-row gap-10" > 
-                                        <img src={Telegram} width={30} height={20}  alt="" />
-                                        <h1 className="text-orange-500 text-3xl  ">Telegram</h1>
-                                    </li>
-                                    <li className="flex flex-row gap-10" > 
-                                        <img src={Facebook}  width={30} height={20}alt="" />
-                                        <h1 className="text-orange-500 text-3xl  ">Facebook</h1>
-                                    </li>
-                                    <li className="flex flex-row gap-10" > 
-                                        <img src={Insta} width={30} height={20}  alt="" />
-                                        <h1 className="text-orange-500 text-3xl  ">Instagram</h1>
-                                    </li>
-                                </ul>
-                                     
-                            </div>
+                            <div className="flex flex-col justify-center align-middle">
+  <ul className="flex flex-col gap-2">
+    <li className="flex flex-row gap-10">
+      <a href="https://x.com/Doogscoin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
+        <img src={Twiiter} width={30} height={20} alt="Twitter" />
+        <h1 className="text-orange-500 text-3xl">Twitter</h1>
+      </a>
+    </li>
+    <li className="flex flex-row gap-10">
+      <a href="https://t.me/DoogsCoinOfficial" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
+        <img src={Telegram} width={30} height={20} alt="Telegram" />
+        <h1 className="text-orange-500 text-3xl">Telegram</h1>
+      </a>
+    </li>
+    <li className="flex flex-row gap-10">
+      <a href="https://www.facebook.com/Doogscoin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
+        <img src={Facebook} width={30} height={20} alt="Facebook" />
+        <h1 className="text-orange-500 text-3xl">Facebook</h1>
+      </a>
+    </li>
+    <li className="flex flex-row gap-10">
+      <a href="http://www.instagram.com/doogscoinofficial" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
+        <img src={Insta} width={30} height={20} alt="Instagram" />
+        <h1 className="text-orange-500 text-3xl">Instagram</h1>
+      </a>
+    </li>
+    <li className="flex flex-row gap-10">
+      <a href="http://www.youtube.com/@DoogsCoin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
+        <img src={Youtube} width={30} height={20} alt="YouTube" />
+        <h1 className="text-orange-500 text-3xl">YouTube</h1>
+      </a>
+    </li>
+  </ul>
+</div>
+
 
 
 
