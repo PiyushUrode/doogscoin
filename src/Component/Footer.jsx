@@ -3,7 +3,7 @@ import Twiiter from "../assets/images/footer/TwitterX.svg"
 import Telegram from "../assets/images/footer/Telegram-1.png"
 import Facebook from "../assets/images/footer/Facebook.svg"
 import Insta from "../assets/images/footer/Insta.svg"
-import Youtube1 from "../assets/images/footer/youtube.png"
+// import Youtube1 from "../assets/images/footer/youtube.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -77,12 +77,12 @@ const Footer = () => {
         <h1 className="text-orange-500 text-3xl">Instagram</h1>
       </a>
     </li>
-    <li className="flex flex-row gap-10">
+    {/* <li className="flex flex-row gap-10">
       <a href="http://www.youtube.com/@DoogsCoin" target="_blank" rel="noopener noreferrer" className="flex items-center gap-10">
         <img src={Youtube1} width={30} height={20} alt="YouTube" />
         <h1 className="text-orange-500 text-3xl">YouTube</h1>
       </a>
-    </li>
+    </li> */}
   </ul>
 </div>
 
