@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+
+
+
       fontFamily: {
         comic: ['Comic Sans MS', 'cursive', 'sans-serif'], // Apply Comic Sans globally
       },

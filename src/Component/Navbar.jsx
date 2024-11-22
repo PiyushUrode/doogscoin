@@ -1,14 +1,18 @@
 import { useEffect, useState } from 'react';
 import logo from "../assets/images/doglogo.webp";
-
-
-
-
+import Popup from './Popupbuydog';
 
 const Navbar = () => {
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [isNavVisible, setIsNavVisible] = useState(false);
 
+  // Toggle popup visibility
+  const togglePopup = () => {
+    setIsPopupOpen(!isPopupOpen);
+  };
+
+  // Scroll effect
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 0);
@@ -31,9 +35,9 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`w-full overflow-x-hidden top-0 border-b border-none dark:border-gray-600`}>
+    <nav className={`w-full overflow-x-hidden -z-10  top-0 border-b border-none dark:border-gray-600`}>
       <div className="relative max-w-full flex flex-wrap items-center justify-between mx-auto p-4 px-4 md:p-4 md:px-8">
-        {/* Replace Link with an anchor tag */}
+        {/* Logo */}
         <a href="#home" onClick={closeMenu}>
           <div className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
@@ -45,12 +49,13 @@ const Navbar = () => {
           </div>
         </a>
 
+        {/* Right Section */}
         <div className="flex md:order-2 gap-5 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div className='flex gap-3 sm:gap-1 hidden sm:block items-center'>
+          <div className="flex gap-3 sm:gap-1 hidden sm:block items-center">
             <a
               target="blank"
               href="/whitepaper.pdf"
-              rel="noopener noreferrer" 
+              rel="noopener noreferrer"
               className="rbtn h-fit rounded-full"
             >
               <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
@@ -59,19 +64,17 @@ const Navbar = () => {
             </a>
           </div>
 
-          <div className='flex gap-3 sm:gap-1 items-center'>
+          <div className="flex gap-3 sm:gap-1 items-center">
             <a
-              target="blank"
-              href="/"
+
               className="rbtn h-fit rounded-full"
+              onClick={togglePopup}
             >
               <span className="text rounded-full px-1 py-1 sm:py-3 sm:px-3 sm:text-sm text-orange-500 rounded-xl border-2 border-orange-500">
                 BUY DOOGS
               </span>
             </a>
           </div>
-
-
 
           <button
             onClick={toggleNav}
@@ -98,6 +101,7 @@ const Navbar = () => {
           </button>
         </div>
 
+        {/* Navbar Items */}
         <div
           id="navbar-sticky1"
           className={`items-center justify-between w-[99%] md:flex md:w-auto md:order-1 ${isNavVisible ? 'block' : 'hidden'}`}
@@ -117,6 +121,7 @@ const Navbar = () => {
                 </div>
               </a>
             </li>
+
             <li className="md:border-none border-b-[1px] border-gradient">
               <a href="#token" onClick={closeMenu}>
                 <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">
@@ -124,6 +129,8 @@ const Navbar = () => {
                 </div>
               </a>
             </li>
+
+
             <li className="md:border-none border-b-[1px] border-gradient">
               <a href="#howtobuy" onClick={closeMenu}>
                 <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">
@@ -132,17 +139,25 @@ const Navbar = () => {
               </a>
             </li>
 
-            <li className="md:border-none md:hidden border-b-[1px] border-gradient">
-              <a href="/whitepaper.pdf" target="_blank" rel="noopener noreferrer"  onClick={closeMenu}>
-                <div className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit">
-                  Whitepaper
-                </div>
-              </a>
-            </li>
+
+            
+            {/* Popup Trigger */}
+            {/* <li className="md:border-none border-b-[1px] border-gradient ">
+              <div
+                onClick={togglePopup}
+                className="font-normal block py-2 px-3 text-black rounded hover:bg-gray-700 md:hover:bg-transparent md:p-0 hover:text-orange-600 font-outfit cursor-pointer"
+              >
+                How to Buy
+              </div>
+            </li> */}
+
 
           </ul>
         </div>
       </div>
+
+      {/* Popup */}
+      {isPopupOpen && <Popup onClose={togglePopup} />}
     </nav>
   );
 };

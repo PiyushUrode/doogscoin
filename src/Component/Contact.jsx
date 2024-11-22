@@ -1,11 +1,27 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import contact1 from "../assets/images/contact/contact1.webp";
 import contact2 from "../assets/images/contact/contact2.png";
 
+
 const Contact = () => {
+  const contractAddress = "0x3Ca10621F157CF3c9d4D86826C2F8670F16B5914";
+  const [copyStatus, setCopyStatus] = useState('');
+
+  const handleCopy = () => {
+    navigator.clipboard
+      .writeText(contractAddress)
+      .then(() => {
+        setCopyStatus('Copied to Clipboard !');
+        setTimeout(() => setCopyStatus(''), 2000); // Clears the message after 2 seconds
+      })
+      .catch(() => {
+        setCopyStatus('Copy failed');
+      });
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -15,6 +31,10 @@ const Contact = () => {
   }, []);
 
   return (
+    <>
+       
+
+
     <div
       id="contact"
       className="flex flex-col overflow-x-hidden md:flex-row items-center justify-center gap-6 px-4 md:px-10 py-10"
@@ -70,11 +90,33 @@ const Contact = () => {
               border: '3px solid #ffffff',
             }}
           >
-            <h1 className="font-semibold">Timeless Vibes, Endless Laughs!</h1>
+
+            <div>
+
+        <p className="text-xl sm:text-3xl font-semibold w-full break-words leading-tight">
+          {contractAddress}
+        </p>
+        <div className="flex flex-col md:flex-row gap-4 items-center justify-center w-full max-w-md mx-auto">
+          <button
+            className="text-base sm:text-lg md:text-xl font-semibold border-customTeal rounded-2xl text-black px-4 py-2 border-2 hover:bg-customTealhover hover:text-black w-full md:w-1/2"
+            onClick={handleCopy}
+          >
+            Copy Address
+          </button>
+
+        </div>
+        {copyStatus && (
+          <p className="text-black text-center mt-4">
+            {copyStatus}
+          </p>
+        )}
+            </div>
+            {/* hello */}
           </motion.div>
         </div>
       </div>
     </div>
+    </>
   );
 };
 
