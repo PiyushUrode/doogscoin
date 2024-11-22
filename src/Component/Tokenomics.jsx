@@ -67,13 +67,13 @@ const Tokenomics = () => {
     {/* Text Section */}
     <div className="w-full sm:w-1/2 flex flex-col  align-middle  justify-center text-center md:text-left gap-6">
       <h1 className="text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
-        Outdated Dreams – The Fall of Yesterday's Meme Coins
+       <span className="text-orange-500"> Outdated Dreams – </span>  The Fall of Yesterday's Meme Coins
       </h1>
       <h1 className="text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
-        Zero Utility, Zero Future – The Reality Check
+       <span className="text-orange-500">  Zero Utility, Zero Future – </span>The Reality Check
       </h1>
       <h1 className="text-black font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl leading-snug">
-        Meme Supremacy – Leading the Meme Coin Revolution
+        <span className="text-orange-500"> Meme Supremacy – </span>  Leading the Meme Coin Revolution
       </h1>
     </div>
   </div>
